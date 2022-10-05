@@ -43,8 +43,8 @@
           <ReviewComment
             v-for='_comment in comments'
             :comment="_comment"
-            class="mb-4" 
-            :key="_comment._id" 
+            class="mb-4"
+            :key="_comment._id"
             recommendationCheckMode
             @input="updateComment($event)"
           ></ReviewComment>
@@ -186,7 +186,7 @@ export default {
         })
       }
     },
-    
+
     async fetch() {
       this.loading = true
       try {
@@ -202,10 +202,10 @@ export default {
         this.$message({
           type: 'error',
           message: ErrorMessage(err),
-        }) 
+        })
         this.$emit('close')
       }
-    }, 
+    },
 
     async getTeacherComments(){
       this.loading = true
@@ -225,7 +225,7 @@ export default {
         this.$message({
           type: 'error',
           message: ErrorMessage(err),
-        }) 
+        })
       }
     },
 

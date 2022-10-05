@@ -1,4 +1,4 @@
-<v-container style="display: flex; flex-direction: column; min-height: 100%;">  
+<v-container style="display: flex; flex-direction: column; min-height: 100%;">
   <v-layout class="card-group-stats" row style="min-height: 145px; flex: none" :class="{ 'wrap': !$vuetify.breakpoint.lgOnly }">
     <v-flex xs12 lg3 class="card-stats" justify-center>
       <div class="stats-counter" justify-center v-if='$vuetify.breakpoint.lgOnly'>
@@ -85,7 +85,7 @@
     <v-layout class="enrollments-subtitle stats-subtitle mb-2" v-if='total >= 0 && !loading' wrap align-center>
       <v-flex>
         {{ total }} resultados encontrados
-      </v-flex> 
+      </v-flex>
 
       <el-checkbox-group v-model="filterByPeriod" style="min-width: 200px" v-if='!$vuetify.breakpoint.xsOnly'>
         <el-checkbox label="diurno">Matutino</el-checkbox>

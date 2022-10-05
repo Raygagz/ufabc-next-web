@@ -51,7 +51,7 @@
 
 .a-as-div {
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
 }
 
 .overflow-hidden {
@@ -93,8 +93,8 @@
 .float-none {
   float: none;
 }
-/* 
-  Divider styles 
+/*
+  Divider styles
 */
 .divider-overlay-below {
   position: relative;
@@ -103,7 +103,7 @@
   background-color: rgba(0, 0, 0, 0.06) !important
 }
 
-/* 
+/*
   Positions helpers
 */
 .static {
@@ -116,8 +116,8 @@
   position: absolute;
 }
 
-/* 
-  Flexbox helpers 
+/*
+  Flexbox helpers
 */
 .flex-wrap {
   flex-wrap: wrap;

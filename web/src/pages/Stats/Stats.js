@@ -113,7 +113,7 @@ export default {
         title: 'Alterar quadrimestre',
         width: '750px',
         top: '10vh',
-        inputType: 'select', 
+        inputType: 'select',
         items: this.allSeasons(),
         inputPlaceholder: 'Escolha o quadrimestre',
         validationRules: 'required',
@@ -126,7 +126,7 @@ export default {
           this.fetchAll()
         }
 
-      } catch(e) {} 
+      } catch(e) {}
     },
 
     mapTurnoLabel(turno) {
@@ -224,8 +224,8 @@ export default {
         this.moreLoading = true
       }
 
-      let body = { 
-        page: this.page, 
+      let body = {
+        page: this.page,
         [this.orderby]: 1,
         season: this.season,
       }
@@ -262,7 +262,7 @@ export default {
         this.$message({
           type: 'error',
           message: ErrorMessage(err),
-        }) 
+        })
       }
     },
 

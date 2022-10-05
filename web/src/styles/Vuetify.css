@@ -1,5 +1,5 @@
 
-/* 
+/*
  * VAutocomplete to search reviews of teachers and disciplines
  */
 .search-review-input.v-text-field > .v-input__control > .v-input__slot:before,
@@ -29,7 +29,7 @@
   margin-top: 16px;
 }
 
-@media (max-width: 600px) { 
+@media (max-width: 600px) {
   .chart-large{
     margin-top: 0px;
   }
@@ -96,7 +96,7 @@
 
 
 .settings-button {
-  text-transform: initial; 
-  width: 130px; 
+  text-transform: initial;
+  width: 130px;
   height: 48px;
 }

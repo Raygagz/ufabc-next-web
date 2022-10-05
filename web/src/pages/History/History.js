@@ -101,7 +101,7 @@ export default {
         this.$message({
           type: 'error',
           message: ErrorMessage(err),
-        }) 
+        })
       }
     },
 
@@ -123,7 +123,7 @@ export default {
           if(res.action == 'create') this.createComment(res.enrollmentId, res.comment, res.type)
           if(res.action == 'update') this.updateComment(res.commentId, res.comment)
         }
-      } catch(e) {} 
+      } catch(e) {}
     },
 
     async createComment(enrollmentId, comment, type) {
@@ -150,7 +150,7 @@ export default {
         this.$message({
           type: 'error',
           message: ErrorMessage(err),
-        }) 
+        })
 
 
       }
@@ -176,7 +176,7 @@ export default {
         this.$message({
           type: 'error',
           message: ErrorMessage(err),
-        }) 
+        })
       }
     },
 
@@ -193,7 +193,7 @@ export default {
       try {
         let res = await dialog
         window.open('https://aluno.ufabc.edu.br/fichas_individuais')
-      } catch(e) {} 
+      } catch(e) {}
     }
 
   }

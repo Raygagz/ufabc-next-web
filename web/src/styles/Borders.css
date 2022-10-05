@@ -1,4 +1,4 @@
-/* 
+/*
   Borders
 */
 .border-right {
@@ -14,7 +14,7 @@
   border-bottom: 1px solid rgba(0,0,0,0.07)!important;
 }
 .border {
-  border: 1px solid rgba(0,0,0,0.07)!important; 
+  border: 1px solid rgba(0,0,0,0.07)!important;
 }
 
 .border-right-lighten-3 {
@@ -30,9 +30,9 @@
   border-bottom: 3px solid #f4f5f7!important;
 }
 .border-lighten-3 {
-  border: 3px solid #f4f5f7!important; 
+  border: 3px solid #f4f5f7!important;
 }
 
-.no-border { 
+.no-border {
   border: none !important;
 }

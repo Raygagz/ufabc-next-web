@@ -8,4 +8,4 @@ export default function(alias){
   }
 
   return alias[0] + alias[1]
-} 
+}

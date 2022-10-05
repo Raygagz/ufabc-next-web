@@ -12,9 +12,9 @@
               </v-btn> -->
             </div>
             <div style="align-items: center; display:flex; height: calc(100% - 26px);">
-              <div 
-                class="concept-comment" 
-                style="flex: none;" 
+              <div
+                class="concept-comment"
+                style="flex: none;"
                 :style="{'backgroundColor': conceptsColor[enrollment.conceito || 'null']}">
                   {{ enrollment.conceito }}
               </div>
@@ -143,8 +143,8 @@ export default {
                 return true
               } else if(e.pratica && e.pratica._id && !_.includes(e.comments, 'pratica') && !this.sameBothProfessor(e)){
                 return true
-              }              
-            }) 
+              }
+            })
 
             if(subjectsToReview.length) {
               this.hasAnyToReview = true
@@ -159,7 +159,7 @@ export default {
         this.$message({
           type: 'error',
           message: ErrorMessage(err),
-        }) 
+        })
       }
     },
 
@@ -185,7 +185,7 @@ export default {
           if(res.action == 'create') this.createComment(res.enrollmentId, res.comment, res.type)
           if(res.action == 'update') this.updateComment(res.commentId, res.comment)
         }
-      } catch(e) {} 
+      } catch(e) {}
     },
 
     async createComment(enrollmentId, comment, type) {
@@ -212,7 +212,7 @@ export default {
         this.$message({
           type: 'error',
           message: ErrorMessage(err),
-        }) 
+        })
       }
     },
 
@@ -236,7 +236,7 @@ export default {
         this.$message({
           type: 'error',
           message: ErrorMessage(err),
-        }) 
+        })
       }
     },
   }
@@ -246,9 +246,9 @@ export default {
 
 <style scoped>
 .enrollment {
-  background-color: #fff; 
-  border-radius: 4px; 
-  overflow: hidden; 
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
   height: 92px;
 }
 .enrollment-name {
@@ -306,7 +306,7 @@ export default {
   height: 100%;
 }
 .teacher {
-  display: flex; 
+  display: flex;
   align-items: center;
   font-weight: 300;
 }

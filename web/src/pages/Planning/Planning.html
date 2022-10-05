@@ -23,8 +23,8 @@
             class="v-chip--select-multi mr-2"
             @click.stop="data.parent.selectedIndex = data.index"
             @input="data.parent.selectItem(data.item)"
-            label 
-            color="blue" 
+            label
+            color="blue"
             text-color="white"
           >
             {{ data.item.grade }}
@@ -41,8 +41,8 @@
                 class="v-chip--select-multi ml-2"
                 @click.stop="data.parent.selectedIndex = data.index"
                 @input="data.parent.selectItem(data.item)"
-                label 
-                color="blue" 
+                label
+                color="blue"
                 text-color="white"
               >
                 {{ data.item.grade }}
@@ -81,7 +81,7 @@
           ></v-progress-linear>
         </div>
       </v-flex>
-  
+
       <v-flex xs12 sm3 md3 lg3 class="card-stats">
         <v-layout row align-center>
           <v-icon class="mb-1" color="ufabcnext-blue-light" style="display: block;">mdi-bullseye-arrow          </v-icon>
@@ -100,7 +100,7 @@
           ></v-progress-linear>
         </div>
       </v-flex>
-  
+
       <v-flex xs12 sm3 md3 lg3 class="card-stats">
         <v-layout row align-center>
           <v-icon class="mb-1" color="ufabcnext-pink" style="display: block;">mdi-balloon</v-icon>
@@ -119,7 +119,7 @@
           ></v-progress-linear>
         </div>
       </v-flex>
-  
+
       <v-flex xs12 sm3 md3 lg3 class="card-stats">
         <v-layout row align-center>
           <v-icon class="mb-1" color="ufabcnext-green" style="display: block;">mdi-school</v-icon>
@@ -139,7 +139,7 @@
         </div>
       </v-flex>
     </v-layout>
-    
+
 
     <v-layout column v-loading="loadingSubjects || loadingHistory">
       <div class="graduation-year mb-3" v-for="(year, i) in Object.keys(termsByYear)" :key="i">
@@ -156,11 +156,11 @@
               {{ sumAllCompletedCredits(filterSubjects(term.quad, term.year)) }} de {{ sumAllCredits(filterSubjects(term.quad, term.year)) }} créditos
             </div>
           </div>
-          
+
           <div class="graduation-subjects ml-2 mb-3">
-            <div 
-              class="graduation-term-subjects mr-2 elevate-3d" 
-              v-for="subject in filterSubjects(term.quad, term.year)" 
+            <div
+              class="graduation-term-subjects mr-2 elevate-3d"
+              v-for="subject in filterSubjects(term.quad, term.year)"
               :class="isCompleted(subject.subject.name) ? 'completed' : subject.category"
               :key="subject.id">
               <div class="graduation-subject-name">{{ subject.subject.name }}</div>

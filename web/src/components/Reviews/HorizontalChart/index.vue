@@ -14,7 +14,7 @@
       </span>
     </el-tooltip>
 
-    <span 
+    <span
       v-if="teacher.count < unthrustableThreshold"
       class="low-samples">Dados sem muitas amostras</span>
   </div>
@@ -27,10 +27,10 @@ export default {
     return {
       concepts: [
         {code: 'A', color: 'rgb(63, 207, 140)'},
-        {code: 'B', color: 'rgb(184, 233, 134)'}, 
-        {code: 'C', color: 'rgb(248, 183, 76)'}, 
-        {code: 'D', color: 'rgb(255, 160, 4)'}, 
-        {code: 'F', color: 'rgb(249, 84, 105)'}, 
+        {code: 'B', color: 'rgb(184, 233, 134)'},
+        {code: 'C', color: 'rgb(248, 183, 76)'},
+        {code: 'D', color: 'rgb(255, 160, 4)'},
+        {code: 'F', color: 'rgb(249, 84, 105)'},
         {code: 'O', color: 'rgb(169, 169, 169)'},
       ],
       unthrustableThreshold: 10,
@@ -51,7 +51,7 @@ export default {
 }
 
 .grading-segment {
-  height: 100%; 
+  height: 100%;
   flex: 1 1 auto;
   transition: opacity 0.2s ease-in-out, width 0.9s ease-in-out;
 }
@@ -74,17 +74,17 @@ export default {
   opacity: 1 !important;
 }
 .low-samples {
-  display: block; 
-  position: absolute; 
-  top: 0; 
-  right: 0; 
-  left: 0; 
-  bottom: 0; 
-  background: rgba(0, 0, 0, 0.26); 
-  color: white; 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.26);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
 }
 .grading:hover .low-samples {

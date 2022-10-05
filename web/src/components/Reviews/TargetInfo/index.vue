@@ -8,13 +8,13 @@
     </div>
     <div class="chipzinha" xs12 :style="style"  v-if='classesCount >= 0 && target.kind == "teacher"'>
       <v-icon size="20" class="mr-1" color="inherit">mdi-teach</v-icon> {{ classesCount }} {{ classesCount == '1' ? 'disciplina' : 'disciplinas' }}
-    </div><!-- 
+    </div><!--
     <div xs12 :style="style" v-if='target.kind == "teacher"' style="display: flex;">
-      <v-icon size="20" class="mr-1" color="grey">mdi-gmail</v-icon> 
+      <v-icon size="20" class="mr-1" color="grey">mdi-gmail</v-icon>
       <a href="mailto:professor@ufabc.edu.br" style="text-decoration: none;">
         professor@email.edu.br
       </a>
-    </div> --><!-- 
+    </div> --><!--
     <div xs12 :style="style"  style="display: flex;" v-if='target.kind == "teacher"'>
       <v-icon size="20" class="mr-1" color="grey">mdi-home</v-icon> Sala 9999 (Bloco B)
     </div> -->
@@ -57,7 +57,7 @@ export default {
   computed:{
     style() {
       if(!this.$vuetify.breakpoint.smAndUp) return {}
-      return { 
+      return {
         'flex': 'none',
         'marginRight': '16px',
         'marginBottom': '4px',

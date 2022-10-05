@@ -5,7 +5,7 @@ export default {
     return {
      inApp: !!window.cordova
    }
-  },  
+  },
   created() {
     if(Auth.isLoggedIn()) {
       this.$router.push('/reviews')

@@ -22,7 +22,7 @@
 /*
  * Colors to components
  */
-/* 
+/*
   Green - Text color, border color and background color
 */
 .ufabcnext-green {
@@ -35,7 +35,7 @@
   color: var(--ufabcnext-green) !important;
 }
 
-/* 
+/*
   Blue - Text color, border color and background color
 */
 .ufabcnext-blue {
@@ -48,7 +48,7 @@
   color: var(--ufabcnext-blue) !important;
 }
 
-/* 
+/*
   Grey - Text color, border color and background color
 */
 .ufabcnext-grey {
@@ -61,7 +61,7 @@
   color: var(--ufabcnext-grey) !important;
 }
 
-/* 
+/*
   Light Grey - Text color, border color and background color
 */
 .ufabcnext-lightgrey {
@@ -74,7 +74,7 @@
   color: var(--ufabcnext-lightgrey) !important;
 }
 
-/* 
+/*
   Dark Grey - Text color, border color and background color
 */
 .ufabcnext-darkgrey {
@@ -87,7 +87,7 @@
   color: var(--ufabcnext-darkgrey) !important;
 }
 
-/* 
+/*
   Yellow - Text color, border color and background color
 */
 .ufabcnext-yellow {
@@ -100,7 +100,7 @@
   color: var(--ufabcnext-yellow) !important;
 }
 
-/* 
+/*
   Light Grey - Text color, border color and background color
 */
 .ufabcnext-navigation {
@@ -113,7 +113,7 @@
   color: var(--ufabcnext-navigation) !important;
 }
 
-/* 
+/*
   Red - Text color, border color and background color
 */
 .ufabcnext-red {
@@ -126,7 +126,7 @@
   color: var(--ufabcnext-red) !important;
 }
 
-/* 
+/*
   Nav blue - Text color, border color and background color
 */
 .ufabcnext-nav-blue {
@@ -139,7 +139,7 @@
   color: var(--ufabcnext-nav-blue) !important;
 }
 
-/* 
+/*
   Blue Light - Text color, border color and background color
 */
 .ufabcnext-blue-light {
@@ -165,7 +165,7 @@
 .ufabcnext-link--text {
   color: #4a90e2 !important;
 }
-/* 
+/*
   Like - Text color, border color and background color
 */
 .ufabcnext-like {
@@ -178,7 +178,7 @@
   color: var(--ufabcnext-like) !important;
 }
 
-/* 
+/*
   Liked - Text color, border color and background color
 */
 .ufabcnext-liked {

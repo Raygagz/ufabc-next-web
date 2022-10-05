@@ -25,7 +25,7 @@ function RedirectIfLogged(params) {
       let token = _.get(to, 'query.token', null)
       if(!token) {
         const inApp = !!window.cordova
-          
+
         if(!inApp) {
           window.location = process.env.VUE_APP_HOME_URL
 
@@ -42,7 +42,7 @@ function RedirectIfLogged(params) {
         return next('/signup')
       }
     }
-    
+
     // if((to.name == 'register' || to.name == 'reset-password' || to.name == 'forgot-password' || to.name == 'complete-account') && Auth.isLoggedIn()){
     //   Auth.logOut()
     //   return next(to.fullPath)

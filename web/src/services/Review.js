@@ -11,7 +11,7 @@ class Review {
   async getSubjectConcepts(subjectId) {
     return await Axios.get('/reviews/subjects/' + subjectId)
   }
-  
+
 }
 
 export default (new Review)

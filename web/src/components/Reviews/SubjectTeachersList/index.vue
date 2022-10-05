@@ -30,9 +30,9 @@
         :min-width="$vuetify.breakpoint.xsOnly ? 220 : null"
         :width="$vuetify.breakpoint.xsOnly ? null : '180'">
         <template slot-scope="scope">
-          <div 
+          <div
             @click="openTeacher(scope.row)"
-            v-if='scope.row.teacher && scope.row.teacher.name' 
+            v-if='scope.row.teacher && scope.row.teacher.name'
             style="word-break: break-word; cursor: pointer; display: flex;">
             {{ scope.row.teacher.name || '(professor desconhecido)' }}
             <v-icon color="blue" size="20" class="ml-2">mdi-open-in-new</v-icon>
@@ -120,7 +120,7 @@ export default {
       let teachers = [...this.teachers||[]]
       let possibleConcepts = ['A', 'B', 'C', 'D', 'F', 'O']
 
-      for (let i = 0; i < teachers.length; i++) { 
+      for (let i = 0; i < teachers.length; i++) {
         teachers[i].concepts = {}
         possibleConcepts.forEach(c => {
           teachers[i].concepts[c] = {}

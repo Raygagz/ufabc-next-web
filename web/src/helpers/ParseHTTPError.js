@@ -27,7 +27,7 @@ export default function (err) {
     })
   }
 
-  // Default is to return the 
+  // Default is to return the
   return BuildError({
     type: typeForCode(data.status),
     error: data,
@@ -35,7 +35,7 @@ export default function (err) {
   })
 }
 
-function typeForCode(code){ 
+function typeForCode(code){
   return {
     '400': 'BadRequest',
     '401': 'Unauthorized',
@@ -50,7 +50,7 @@ function typeForCode(code){
 function BuildError(obj) {
   var error = new Error(obj.error)
   error.name = obj.type || error.name
-  
+
   Object.assign(error, obj)
 
   return error

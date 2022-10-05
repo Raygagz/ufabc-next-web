@@ -74,7 +74,7 @@ export default {
         subjectId: null,
         q: ''
       }
-    } 
+    }
   },
 
   created() {
@@ -101,7 +101,7 @@ export default {
       },
       deep: true,
     },
-    
+
     search(val) {
       this.query.q = val
 
@@ -125,7 +125,7 @@ export default {
         } else if(val.kind == 'subject') {
           this.query.teacherId = null
           this.query.subjectId = val._id
-        } 
+        }
       },
       get() {
         return this.target
@@ -136,7 +136,7 @@ export default {
       return !Object.values(this.query).some(val => val)
     },
 
-    possibleDisciplinas(){ 
+    possibleDisciplinas(){
       let disciplinas = [...this.concepts.specific.filter(c => c._id)]
       let generalDefaults = {
         _id: {
@@ -199,7 +199,7 @@ export default {
       let screenWidth = this.$vuetify.breakpoint.width
       let width  =  onlyXs ? (screenWidth - 40) > maxWidth ? maxWidth : (screenWidth - 40) : maxWidth
       let height =  onlyXs ? (screenWidth - 140) > maxHeight ? maxHeight : (screenWidth - 120) : maxHeight
-      
+
       return {
         chart: {
           type: "pie",
@@ -258,16 +258,16 @@ export default {
     crCropped(cr){
       return cr && cr.toFixed(2)
     },
-    
+
     findConcept(concept) {
       let conceito = _.find(this.conceitoDistribution, { conceito: concept }, null)
       return conceito ? this.crCropped(conceito.cr_medio) : '-'
     },
-    
+
     findCount(concept) {
       let conceito = _.find(this.conceitoDistribution, { conceito: concept }, null)
       return conceito ? conceito.count : '-'
-    },  
+    },
 
     fetchDebounced: _.debounce(function () {
       this.fetch()
@@ -310,7 +310,7 @@ export default {
         this.$message({
           type: 'error',
           message: ErrorMessage(err),
-        }) 
+        })
       }
     },
 
@@ -343,7 +343,7 @@ export default {
         this.$message({
           type: 'error',
           message: ErrorMessage(err),
-        }) 
+        })
       }
     },
 
@@ -370,9 +370,9 @@ export default {
         this.$message({
           type: 'error',
           message: ErrorMessage(err),
-        }) 
+        })
       }
-    }, 
+    },
 
     async searchSubject(q) {
       try {
@@ -390,9 +390,9 @@ export default {
         // this.$message({
         //   type: 'error',
         //   message: ErrorMessage(err),
-        // }) 
+        // })
       }
-    }, 
+    },
 
     fetchStudent() {
       // this.student_cr = 4.2222
@@ -416,7 +416,7 @@ export default {
       }
 
 
-      let body = { 
+      let body = {
         page: this.page,
         limit: this.limit
       }
@@ -453,7 +453,7 @@ export default {
         this.$message({
           type: 'error',
           message: ErrorMessage(err),
-        }) 
+        })
       }
     },
 
@@ -489,7 +489,7 @@ export default {
         }
         this.samplesCount = filter.count
 
-        pieChart.addSeries({  
+        pieChart.addSeries({
           data: _.sortBy(conceitosFiltered, 'name')
         })
         pieChart.hideLoading();

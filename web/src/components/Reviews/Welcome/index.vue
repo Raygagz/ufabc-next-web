@@ -22,7 +22,7 @@
 <script>
 export default {
   name: 'WelcomeReview'
-}  
+}
 </script>
 <style>
 .grid-explain-review {

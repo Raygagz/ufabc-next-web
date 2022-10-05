@@ -53,7 +53,7 @@
 
     <v-flex xs12 sm3 md3 lg3 class="card-stats">
       <v-icon class="mb-1" color="ufabcnext-yellow" style="display: block;">mdi-fire</v-icon>
-      <div class="stats-counter">{{maxCreditsQuad.period_credits}} <span class="stats-subtitle">créditos</span> / 
+      <div class="stats-counter">{{maxCreditsQuad.period_credits}} <span class="stats-subtitle">créditos</span> /
       <span class="f-16">{{maxCreditsQuad.season}}</span>
       </div>
       <div class="stats-subtitle">Quadrimestre com mais créditos</div>
@@ -67,7 +67,7 @@
       </div>
     </v-flex>
   </v-layout>
-  
+
   <div v-if="crHistoryOptions.rows.length" v-loading="crHistoryLoading" class="flex mb-4 column ra-1 elevate-2 pa-3 white">
     <span class="chart-title">Seu CR ao longo do tempo</span>
     <ve-line v-if="crHistoryOptions && crHistoryOptions.rows.length" :data="crHistoryOptions" :settings="crHistorySettings" :xAxis="crHistoryxAxis" :yAxis="crHistoryyAxis"></ve-line>
@@ -75,7 +75,7 @@
 
   <div v-if="cpHistoryOptions.rows.length" v-loading="cpHistoryLoading" class="flex mb-4 column ra-1 elevate-2 pa-3 white">
     <span class="chart-title mb-2">Seu CP ao longo do tempo</span>
-    <el-select 
+    <el-select
       v-model="cpSelectedHistory"
       @change="updateCpHistory()"
       placeholder="Curso"

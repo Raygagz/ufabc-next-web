@@ -62,7 +62,7 @@ export default [
     icon: 'mdi-whatsapp',
     url: 'https://rebrand.ly/ufabc-grupos-whatsapp',
   },
-  
+
   {
     title: 'Apoie o UFABC next',
     featured: true,

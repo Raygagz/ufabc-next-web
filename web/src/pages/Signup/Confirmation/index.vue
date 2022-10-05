@@ -5,7 +5,7 @@
       <div class="mb-4 f-16">
         Estamos te redirecionando ... aguarde um momento
       </div>
-      
+
       <v-progress-circular
         :size="50"
         color="primary"
@@ -54,7 +54,7 @@ export default {
       try {
         if(!token) {
           const inApp = !!window.cordova
-          
+
           if(!inApp) {
             window.location = process.env.VUE_APP_HOME_URL
 
@@ -80,7 +80,7 @@ export default {
           type: 'error',
           message: ErrorMessage(err),
         })
-      }   
+      }
     },
   }
 

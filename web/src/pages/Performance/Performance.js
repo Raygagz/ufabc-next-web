@@ -58,7 +58,7 @@ export default {
         }
       },
     },
-    
+
     this.crDistributionSettings = {
       area: true,
       labelMap: {
@@ -112,7 +112,7 @@ export default {
             globa: false // false by default
         }
       },
-      
+
     }
 
     this.cpHistorySettings = {
@@ -196,7 +196,7 @@ export default {
         nameGap: 25,
         type: 'value'
       },
-      
+
       crDistributionxAxis: {
         name: 'CR',
         nameLocation: 'center',
@@ -208,7 +208,7 @@ export default {
         nameLocation: 'center',
         nameGap: 29,
       },
-      
+
       cpHistoryLoading: false,
       crHistoryLoading: false,
       crDistributionLoading: false,
@@ -252,12 +252,12 @@ export default {
       return _.sumBy(filteredCrs, 'total')
     },
 
-    worstCrsPercentage() { 
+    worstCrsPercentage() {
       return ((this.worstCrsCount/this.crSampleCount) * 100).toFixed(2)
     },
 
     getUserMaxCr() {
-      let maxCr = _.get(_.maxBy(this.crHistoryOptions.rows, 'cr_acumulado'),'cr_acumulado', 0) 
+      let maxCr = _.get(_.maxBy(this.crHistoryOptions.rows, 'cr_acumulado'),'cr_acumulado', 0)
       return maxCr.toFixed(2)
     },
 
@@ -265,17 +265,17 @@ export default {
       let currentCr = {
         cr_acumulado: 0,
       }
-      
+
       if(this.crHistoryOptions.rows && this.crHistoryOptions.rows.length) {
         currentCr = this.crHistoryOptions.rows[this.crHistoryOptions.rows.length - 1]
       }
-      
+
       return currentCr.cr_acumulado.toFixed(2)
     },
 
     targetCrStudent() {
       if(!this.getCurrentCr || !this.crDistributionOptions.rows.length) return
-      
+
       let all_cr = []
       for(let interval of this.crDistributionOptions.rows) {
         all_cr.push(interval && interval._id)
@@ -343,24 +343,24 @@ export default {
   methods: {
     fetch() {
       this.populateCrHistory()
-      this.populateCrDistribution() 
+      this.populateCrDistribution()
       this.populateCpHistory()
     },
 
     normalizeHistory(history) {
       var total = []
-      
+
       Object.keys(history).forEach(key => {
         const year = history[key]
         Object.keys(year).forEach(month => {
-          total.push(_.extend(year[month], { 
-            season: `${key}:${month}`, 
-            quad: parseInt(month), 
-            year: parseInt(key) 
+          total.push(_.extend(year[month], {
+            season: `${key}:${month}`,
+            quad: parseInt(month),
+            year: parseInt(key)
           }))
         })
       })
-    
+
       return total
     },
 

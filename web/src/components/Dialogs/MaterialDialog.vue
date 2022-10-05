@@ -105,7 +105,7 @@ export default {
           {name: 'OK', action: true, class: 'green--text'}
         ]
       },
-    }, 
+    },
   },
   data() {
     return {

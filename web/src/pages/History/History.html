@@ -1,4 +1,4 @@
-<v-container style="display: flex; flex-direction: column; min-height: 100%;">  
+<v-container style="display: flex; flex-direction: column; min-height: 100%;">
   <v-layout row wrap class="white elevation-1 mr-0" :class="$vuetify.breakpoint.xsOnly ? 'px-3' : 'px-5'" style="flex: none">
     <div :class="$vuetify.breakpoint.xsOnly ? 'mt-5' : 'mt-4'" v-if='historySeasons && historySeasons.length'>
       <h2 class="history-title ufabcnext-primary--text">Ficha individual do aluno</h2>
@@ -48,7 +48,7 @@
           width="200"
           label="Professor de Teoria">
         </el-table-column>
-        
+
         <el-table-column
           align="center"
           width="200"
@@ -146,15 +146,15 @@
               <div class="teacher-in-history" style="justify-content: center;" v-else>-</div>
 <!--               <el-button @click="comment(scope.row._id)" type="text" class="teacher-in-history insert-teacher" v-else>
                 <v-icon size="18" class="mr-2" color="ufabcnext-grey">mdi-account-plus</v-icon> Vincular professor
-              </el-button>    -->           
+              </el-button>    -->
             </template>
           </el-table-column>
 
           <el-table-column width="100">
             <template slot-scope="scope">
-              <div 
-                v-if='scope.row.conceito' 
-                class="concept-in-history" 
+              <div
+                v-if='scope.row.conceito'
+                class="concept-in-history"
                 :style="{'color': conceptsColor[scope.row.conceito || 'null']}">
                 {{ scope.row.conceito }}
               </div>
@@ -164,7 +164,7 @@
 
           <el-table-column width="100">
             <template slot-scope="scope">
-              <div  
+              <div
                 class="credits-in-history">
                 {{ scope.row.creditos }}
               </div>

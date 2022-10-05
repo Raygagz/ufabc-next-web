@@ -51,7 +51,7 @@ export default {
         if(res) {
           this.removeUser()
         }
-      } catch(e) {} 
+      } catch(e) {}
     },
 
     async removeUser() {
@@ -62,13 +62,13 @@ export default {
         this.loading = false
         if(res.data){
           Auth.logOut()
-        } 
+        }
       } catch(err) {
         this.loading = false
         this.$message({
           type: 'error',
           message: ErrorMessage(err),
-        }) 
+        })
       }
 
     }
